@@ -1,0 +1,13 @@
+:root {
+    --main-background-color: #fff;
+    --text-color: #4C4C55;
+    --secondary-text: #595964;
+    --tertiary-text: #14141F;
+    
+    --primary-btn-bg: #1688FE;
+    --primary-btn-text: var(--main-background-color);
+
+    --primary-border: #E3E3E4;
+
+    --primary-red: #F25773;
+}

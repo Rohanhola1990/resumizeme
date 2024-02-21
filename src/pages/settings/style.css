@@ -1,0 +1,53 @@
+.settings-personal-information {
+    padding: 32px 80px;
+}
+
+.premium-account {
+    margin-bottom: 32px;
+}
+
+.user-display-image {
+    aspect-ratio: 1 / 1;
+    width: 144px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin-left: 16px;
+}
+
+.form-footer {
+    p {
+        margin-block-end: 16px;
+    }
+}
+
+.settings-visibility {
+    font-size: 0;
+}
+
+.settings-section + .settings-section {
+    margin-block-start: 32px;
+}
+.delete-account {
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid var(--primary-border);
+
+    h4 {
+        margin-block-end: 8px;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 24px;
+    }
+    p {
+        margin-block-end: 16px;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+    }
+    .text-btn {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 22px;
+    }
+}

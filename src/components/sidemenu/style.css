@@ -1,0 +1,119 @@
+.side-menu {
+    flex: 0 0 240px;
+    border-right: 1px solid #ECECED
+}
+.header {
+    flex: 0 0 48px;
+    padding-inline: 8px;
+    border-bottom: 1px solid #ECECED
+}
+.user-space {
+    flex:  0 0 64px;
+    padding-inline: 16px;
+}
+.sidebar-nav {
+    flex: 1 1 auto;
+    overflow: auto;
+    padding-block: 8px;
+
+    ul {
+        li {
+            display: flex;
+            align-items: center;
+            height: 32px;
+            
+            span {
+                flex: 0 0 16px;
+                line-height: 1;
+                font-size: 0;
+            }
+            a {
+                font-size: 13px;
+                line-height: 20px;
+                font-weight: 500;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: flex;
+                align-items: center;
+                height: 32px;
+                column-gap: 6px;
+                padding-inline: 8px;
+            }
+
+            &.sidebar-header {
+                padding-inline: 8px;
+
+                span {
+                    flex: 0 0 16px;
+                    line-height: 1;
+                    font-size: 0;
+
+                    &:not(:has(svg)) {
+                        flex: 1 1 auto;
+                        color: var(--tertiary-text);
+                        font-weight: bold;
+                        font-size: 13px;
+                        line-height: 20px;
+                        margin-inline-start: 4px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.user-name-space {
+    figure {
+        width: 32px;
+        height: 32px;
+        border-radius: 20px;
+        margin-inline-end: 12px;
+    }
+    span {
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 20px;
+    }
+}
+
+.search-sidebar {
+    height: 100%;
+    width: 100%;
+
+    input {
+        border: none;
+        padding-inline: 8px;
+        height: 100%;
+        width: 100%;
+        padding-inline-start: 32px;
+        background-position: left 8px center;
+    }
+}
+
+.user-settings {
+    position: relative;
+}
+.user-settings:after {
+    content: '';
+    position: absolute;
+    pointer-events: none;
+    animation: seeMe 3s infinite alternate;
+    width: 32px;
+    height: 32px;
+    background: radial-gradient(transparent 0%, #ff0202c5 100%);
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: 0% 30%;
+}
+
+@keyframes seeMe {
+    0% {
+        scale: 1;
+    }
+    100% {
+        scale: 1.5;
+    }
+}
